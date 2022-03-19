@@ -1,5 +1,5 @@
 var get = require('node-fetch');
-module.exports = async function remove_client(
+module.exports = async function set_client(
   url: string,
   username: string,
   password: string,

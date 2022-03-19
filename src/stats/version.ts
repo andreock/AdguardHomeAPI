@@ -1,5 +1,5 @@
 var get = require('node-fetch');
-module.exports = async function add_filter(url: string, username: string, password: string) {
+module.exports = async function version(url: string, username: string, password: string) {
   var body = {
     recheck_now: true,
   };

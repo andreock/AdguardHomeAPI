@@ -1,5 +1,5 @@
 var get = require('node-fetch');
-module.exports = async function add_filter(url: string, username: string, password: string, elem: string) {
+module.exports = async function parental_enable(url: string, username: string, password: string, elem: string) {
   var response = await get(url + '/control/parental/enable', {
     method: 'POST',
     headers: {

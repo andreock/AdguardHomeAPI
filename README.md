@@ -14,6 +14,10 @@ Adguard Home API is write in typescript and allows you to use Adguard Home API i
 
 - Fast
 - Simple to use
+
+## Documentation
+
+Under Documentation folder of this repository
 ## Installation
 
 You can use the .sln project if you use Visual Studio 2022 or you can compile with this commands:
@@ -30,7 +34,7 @@ tsc --build
 | ------ | ------ |
 | Complete all POST endopoint | Available from version 1.0.2 |
 | Add some endopoint | Not important, need tester |
-| Add guide | Important |
+| Add guide | Most of things is done, need to finish POST function |
 
 ## Development
 

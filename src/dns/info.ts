@@ -1,5 +1,5 @@
 var get = require('node-fetch');
-module.exports = async function status(url: string, username: string, password: string) {
+module.exports = async function dns_info(url: string, username: string, password: string) {
   var response = await get(url + '/control/dns_info', {
     method: 'GET',
     headers: { Authorization: 'Basic ' + Buffer.from(username + ':' + password).toString('base64') },

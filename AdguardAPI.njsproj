@@ -32,6 +32,9 @@
     <Content Include=".prettierrc">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="documentation\README.md">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="tslint.json">
       <SubType>Code</SubType>
     </Content>
@@ -46,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="examples\" />
+    <Folder Include="documentation\" />
     <Folder Include="src\" />
     <Folder Include="src\clients\" />
     <Folder Include="src\dhcp\" />

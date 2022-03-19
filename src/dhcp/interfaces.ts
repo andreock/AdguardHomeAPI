@@ -1,5 +1,5 @@
 var get = require('node-fetch');
-module.exports = async function dhcp(url: string, username: string, password: string) {
+module.exports = async function interfaces(url: string, username: string, password: string) {
   var response = await get(url + '/control/dhcp/interfaces', {
     method: 'GET',
     headers: { Authorization: 'Basic ' + Buffer.from(username + ':' + password).toString('base64') },

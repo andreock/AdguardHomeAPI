@@ -1,5 +1,5 @@
 var get = require('node-fetch');
-module.exports = async function add_filter(url: string, username: string, password: string, whitelist: boolean) {
+module.exports = async function reload_filter(url: string, username: string, password: string, whitelist: boolean) {
   var body = {
     whitelist: whitelist,
   };
