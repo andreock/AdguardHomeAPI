@@ -20,11 +20,21 @@ Adguard Home API is write in typescript and allows you to use Adguard Home API i
 Under Documentation folder of this repository
 ## Installation
 
+For developers:
+
 You can use the .sln project if you use Visual Studio 2022 or you can compile with this commands:
 
 ```sh
 npm install
 tsc --build
+```
+
+NPM packages:
+
+https://www.npmjs.com/package/adguard-api
+
+```sh
+npm i adguard-api
 ```
 
 ## TODO
