@@ -1,0 +1,12 @@
+*.ts
+*.sln
+*.njsproj
+/examples/
+node_modules
+.vs
+obj
+bin
+tsconfig.json
+README.md
+.prettierrc
+tslint.json

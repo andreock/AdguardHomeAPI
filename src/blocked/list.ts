@@ -1,11 +1,10 @@
-var get = require("node-fetch")
+var get = require('node-fetch');
 module.exports = async function blocked_list(url: string, username: string, password: string) {
-    var response = await get(url + '/control/blocked_services/list', {
-        method: 'GET',
-        headers: { 'Authorization': 'Basic ' + Buffer.from(username + ":" + password).toString('base64') }
-    });
+  var response = await get(url + '/control/blocked_services/list', {
+    method: 'GET',
+    headers: { Authorization: 'Basic ' + Buffer.from(username + ':' + password).toString('base64') },
+  });
 
-    var data = await response.json();
-    return data
-}
-
+  var data = await response.json();
+  return data;
+};

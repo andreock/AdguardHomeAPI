@@ -3,10 +3,10 @@
     "module": "es6",
     "target": "es6",
     "lib": [ "es6" ],
-    "sourceMap": true
+    "sourceMap": true,
   },
   "exclude": [
     "node_modules"
   ],
-  "include": [ "src","examples" ]
+  "include": [ "src","examples", "./"]
 }

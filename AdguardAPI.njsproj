@@ -29,8 +29,17 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".prettierrc">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="tslint.json">
+      <SubType>Code</SubType>
+    </Content>
     <None Include="src\stats\stats.ts" />
     <Content Include=".gitignore" />
+    <Content Include=".npmignore">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json" />
@@ -191,6 +200,9 @@
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\tls\status.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="app.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>

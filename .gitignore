@@ -1,7 +1,7 @@
-*.js
-*.js.map
 /examples/
 node_modules
 .vs
 obj
 bin
+*.js
+*.js.map
