@@ -1,0 +1,3 @@
+C:\Users\Andrea\source\repos\AdguardAPI\obj\Debug\AdguardAPI.njsproj.AssemblyReference.cache
+C:\Users\Andrea\source\repos\AdguardAPI\obj\Debug\AdguardAPI.njsproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\AdguardAPI\bin\Microsoft.NodejsTools.WebRole.dll
