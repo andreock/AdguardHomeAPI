@@ -1,8 +1,11 @@
 # Adguard Home API
 ## A node package to communicate with Adguard api
 
-
-
+<h1>&nbsp;</h1>
+<div align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/AdGuard.svg/2048px-AdGuard.svg.png" width="128">
+</div>
+<h1>&nbsp;</h1>
 Adguard Home API is write in typescript and allows you to use Adguard Home API in JS project with simple function
 
 # The project are in alpha stage and need to be finish
