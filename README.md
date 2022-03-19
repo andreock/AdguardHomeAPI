@@ -8,7 +8,7 @@
 <h1>&nbsp;</h1>
 Adguard Home API is write in typescript and allows you to use Adguard Home API in JS project with simple function
 
-# The project are in alpha stage and need to be finish
+# The project are in beta stage and need to be finish(need documentation and some endpoints)
 
 ## Features
 
