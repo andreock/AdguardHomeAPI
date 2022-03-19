@@ -1,2 +1,6 @@
 *.js
 *.js.map
+/examples/
+node_modules
+.vs
+obj
