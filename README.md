@@ -17,7 +17,8 @@ Adguard Home API is write in typescript and allows you to use Adguard Home API i
 
 ## Documentation
 
-Under Documentation folder of this repository
+https://github.com/Andrea055/AdguardHomeAPI/blob/main/documentation/README.md
+
 ## Installation
 
 For developers:
