@@ -10,7 +10,7 @@ api.blocklist(url,user,pass);
 set_blocklist
 ```
 const api = require("adguard-api")
-api.set_blocklist(url,user,pass);
+api.set_blocklist(url,user,pass,array of service); //more information in adguard API documentation
 ```
 ## Client
 
@@ -31,6 +31,26 @@ client_tags -> Get all client tags
 const api = require("adguard-api")
 api.client_tags(url,user,pass);
 ```
+allowed -> Get all allowed client
+```
+const api = require("adguard-api")
+api.allowed(url,user,pass);
+```
+disallowed -> Get all disallowed client
+```
+const api = require("adguard-api")
+api.disallowed(url,user,pass);
+```
+remove -> remove a client from allowed list
+```
+const api = require("adguard-api")
+api.client_tags(url,user,pass,ip); //ip must be a string
+```
+set -> Get allowed, disallowed and blocked clients through array of IP, all this parameters are mandatory, if you want put no IP in blacklist for example put an array of blank char like [""]
+```
+const api = require("adguard-api")
+api.client_tags(url,user,pass,[allowed IP], [Disallowed IP], [Blocked IP]);
+```
 ## DHCP
 
 dhcp -> Get DHCP information
@@ -44,7 +64,7 @@ interfaces -> Get interfaces of Adguard server
 const api = require("adguard-api")
 api.interfaces(url,user,pass);
 ```
-
+some endopoints are missing because the complexity of parameters but I add it soon :-)
 ## DNS
 
 dns_info -> Get DNS information
@@ -52,7 +72,16 @@ dns_info -> Get DNS information
 const api = require("adguard-api")
 api.dns_info(url,user,pass);
 ```
-
+dns_bootstrap -> Get bootstrap DNS
+```
+const api = require("adguard-api")
+api.dns_bootstrap(url,user,pass);
+```
+dns_upstream -> Get upstream DNS
+```
+const api = require("adguard-api")
+api.dns_upstream(url,user,pass);
+```
 ## Filtering
 
 filter_whitelist -> Get whitelist
@@ -66,7 +95,36 @@ list_filters -> Get filter list
 const api = require("adguard-api")
 api.list_filters(url,user,pass);
 ```
-
+add_filter -> Add a filter to blacklist
+```
+const api = require("adguard-api")
+api.add_filter(url,user,pass,name of filter,list url, whitelist); ///whitelist must be boolean 
+```
+filter_reload -> Reload filters
+```
+const api = require("adguard-api")
+api.filter_reload(url,user,pass,whitelist); //whitelist must be boolean
+```
+filter_remove -> Remove a filter
+```
+const api = require("adguard-api")
+api.filter_reload(url,user,pass,list url); 
+```
+set_filters -> Set the rules of filters
+```
+const api = require("adguard-api")
+api.set_filters(url,user,pass,interval,active); //active must be boolean and indicate if filter are enable or not and interval must be an integer
+```
+user_filters -> Get user filters
+```
+const api = require("adguard-api")
+api.user_filters(url,user,pass); 
+```
+filter_whitelist -> Get filters in whitelist
+```
+const api = require("adguard-api")
+api.filter_whitelist(url,user,pass); 
+```
 ## Parental control
 
 parental_status -> Get status of parental control
@@ -78,10 +136,10 @@ api.parental_status(url,user,pass);
 parental_enable -> Enable parental control
 ```
 const api = require("adguard-api")
-api.parental_enable(url,user,pass,number of filter); //see Adguard API documentation for number of filters
+api.parental_enable(url,user,pass,number of filter); //see Adguard API documentation for number of filters, based on age
 ```
 
-parental_disable -> Get status of parental control
+parental_disable -> Disable parental control
 ```
 const api = require("adguard-api")
 api.parental_disable(url,user,pass);
